@@ -1,6 +1,6 @@
 {
   "name": "@afrodis-ui/react",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -24,7 +24,6 @@
     "typescript": "^4.8.4"
   },
   "dependencies": {
-   
     "@radix-ui/react-avatar": "^1.0.0",
     "@radix-ui/react-checkbox": "^1.0.1",
     "@radix-ui/react-slot": "^1.0.0",

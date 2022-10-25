@@ -20,6 +20,9 @@ jobs:
       - run: npm ci
 
       - run: npm run build
+        env:
+          TURBO_TOKEN: mEAnjc8DeX0aDGEd4uMJ9dyH
+          TURBO_TEAM: redesignsubway
 
       - name: Deploy storybook
         working-directory: ./packages/docs
