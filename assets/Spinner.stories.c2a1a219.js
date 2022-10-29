@@ -1,0 +1,2 @@
+import{S as t}from"./index.1cfb9513.js";import"./index.23fc5aee.js";import"./iframe.d3eab509.js";import"./index.90ee12e6.js";import"./jsx-runtime.431fbd6e.js";import"./polished.esm.bf8dffe3.js";const s={title:"Feedback/Spinner",component:t,arg:{size:"md"},argTypes:{size:{control:{type:"inline-radio",options:["sm","md","lg"]}}}},m={},a=["Default"];export{m as Default,a as __namedExportsOrder,s as default};
+//# sourceMappingURL=Spinner.stories.c2a1a219.js.map
