@@ -27,12 +27,16 @@ export const { styled, css, globalCss, keyframes, theme, createTheme, config } =
       space,
     },
 
+    media: {
+      mobile: '(max-width: 768px)',
+    },
+
     utils: {
-      px: (value: typeof space) => ({
+      px: (value: string) => ({
         paddingLeft: value,
         paddingRight: value,
       }),
-      py: (value: typeof space) => ({
+      py: (value: string) => ({
         paddingTop: value,
         paddingBottom: value,
       }),

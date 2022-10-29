@@ -1,4 +1,6 @@
+import { colors } from '@afrodis-ui/tokens'
 import { keyframes } from '@stitches/react'
+import { rgba } from 'polished'
 import { styled } from '../../styles'
 
 const spin = keyframes({
@@ -15,6 +17,8 @@ export const ButtonSt = styled('button', {
   textAlign: 'center',
   boxSizing: 'border-box',
   padding: '0 $4',
+
+  border: '2px solid var(--focus-border-color)',
 
   display: 'flex',
   alignItems: 'center',
@@ -35,6 +39,10 @@ export const ButtonSt = styled('button', {
 
   '.animate-spin': {
     animation: `${spin} 1s linear infinite`,
+  },
+
+  '&:focus': {
+    boxShadow: `0 0 0 3px ${rgba(colors.indigo400, 0.7)}`,
   },
 
   variants: {
