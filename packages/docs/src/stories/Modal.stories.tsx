@@ -102,8 +102,6 @@ export const WithIcon: StoryObj<ModalHeaderProps> = {
   args: {
     children: (
       <ModalWrapper>
-        <ModalHeader  />
-
         <ModalContent>
           <Text>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. At sunt
