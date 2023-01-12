@@ -7,6 +7,7 @@ import {
   StyledModalTitle,
   SyledModalHeader,
   StyledIconButton,
+  StyledModalActions,
 } from './styles'
 import { X } from 'phosphor-react'
 import { Heading } from '../Heading'
@@ -84,6 +85,20 @@ export function ModalHeader({
     </SyledModalHeader>
   )
 }
+
+export interface ModalFooterProps {
+  children: React.ReactNode
+  align?: 'left' | 'right' | 'center'
+}
+
+export function ModalActions({ children, align }: ModalFooterProps) {
+  return (
+    <StyledModalActions css={{ '--justify-content': align }}>
+      {children}
+    </StyledModalActions>
+  )
+}
+ModalActions.displayName = 'ModalActions'
 
 export const ModalTrigger = DialogPrimite.Trigger
 ModalTrigger.displayName = 'ModalTrigger'

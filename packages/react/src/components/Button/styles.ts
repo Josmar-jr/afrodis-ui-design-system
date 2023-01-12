@@ -105,3 +105,30 @@ export const ButtonSt = styled('button', {
     size: 'md',
   },
 })
+
+{
+  /* <Modal visible={visible} onClose={() => setVisible(!visible)} width={464} fixedHeader hasScrollBar={false}>
+      <div className={css.welcomeToPixModal}>
+        <Slider ref={slideRef} arrows={false} dots adaptiveHeight className={css.modalSlider} infinite={false}>
+          {Object.entries(steps).map(([key, step], i) => (
+            <div key={key} className={css.stepContent}>
+              {step.illustration}
+
+              <strong>{step.title}</strong>
+
+              {step.content()}
+
+              <div className={css.wrapperBtn}>
+                <Button onClick={() => (stepSize === i + 1 ? setVisible(false) : slideRef.current?.slickNext())}>
+                  Próximo
+                </Button>
+                <Button theme="secondary" onClick={() => setVisible(false)}>
+                  Pular introdução
+                </Button>
+              </div>
+            </div>
+          ))}
+        </Slider>
+      </div>
+    </Modal> */
+}

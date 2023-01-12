@@ -53,9 +53,9 @@ export const StyledModalWrapper = styled(DialogPrimite.Content, {
     animation: `${contentShow} .3s ease-in`,
   },
 
-  // '&[data-state="closed"]': {
-  //   animation: `${contentHide} .3s ease-in`,
-  // },
+  '&[data-state="closed"]': {
+    animation: `${contentHide} .3s ease-out`,
+  },
 
   boxShadow: `
     0px 1.8px 2.6px rgba(0, 0, 0, 0.02),
@@ -124,6 +124,19 @@ export const StyledIconButton = styled('button', {
   '&:hover': {
     color: '$gray100',
   },
+})
+
+export const StyledModalClose = styled(DialogPrimite.Close, {})
+
+export const StyledModalActions = styled('footer', {
+  py: '$5',
+  px: '$8',
+
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'var(--justify-content)',
+
+  borderTop: '1px solid $gray500',
 })
 
 export const StyledModalTitle = styled(DialogPrimite.Title, {})
